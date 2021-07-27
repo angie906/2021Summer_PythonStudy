@@ -11,7 +11,7 @@ dice1=randint(1,6)
 dice2=randint(1,6)
 
 print("처음 굴린 주사위1: "+str(dice1))
-print("처음 굴린 주사위2: "+str(dice2))
+print("처음 굴린 주사위2: "+str(dice2)+"\n")
 
 while(1):
     if (dice1+dice2==7) | (dice1+dice2==11):
@@ -25,7 +25,7 @@ while(1):
             dice1_new=randint(1,6)
             dice2_new=randint(1,6)
             print("다시 굴린 주사위1: "+str(dice1_new))
-            print("다시 굴린 주사위2: "+str(dice2_new))
+            print("다시 굴린 주사위2: "+str(dice2_new)+"\n")
             if dice1+dice2==dice1_new+dice2_new:
                 print("승리")
                 break
